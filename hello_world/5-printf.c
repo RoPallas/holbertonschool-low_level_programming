@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  * main - function printf
  *
  * Return - Always 0 (Sucess)
