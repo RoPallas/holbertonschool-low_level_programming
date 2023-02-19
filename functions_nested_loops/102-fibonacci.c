@@ -12,7 +12,9 @@ int main(void)
 	for (i = 0; i < 50; i++)
 	{
 		f = a + b;
-		printf("%ld, ", f);
+		printf("%ld", f);
+		if (i < 49)
+			printf(", ");
 		a = b;
 		b = f;
 	}
