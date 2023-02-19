@@ -16,19 +16,18 @@ void print_times_table(int n)
 			for (c = 0; c <= n; c++)
 			{
 				fc = f * c;
-				if (fc <= 99)
+				if (fc <= 99 && c != 0)
 				{
-					if (c != 0)
-						_putchar(' ');
+					_putchar(' ');
 					if (fc <= 9)
 						_putchar(' ');
 					else
 						_putchar(fc / 10 + '0');
 				}
-				else
+				if (fc > 99 && c != 0)
 				{
 					_putchar(fc / 100 + '0');
-					_putchar((fc % 100) / 10 + '0');
+					_putchar((fc % 10) / 10 + '0');
 				}
 				_putchar(fc % 10 + '0');
 				if (c != n)
