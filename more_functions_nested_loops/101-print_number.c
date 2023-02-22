@@ -20,12 +20,12 @@ void print_number(int n)
 		else
 			f = 0;
 	}
-	while (f == 0)
+	while (num >= 0)
 	{
 		if (d == 1)
 		{
 			_putchar(num % 10 + '0');
-			f = 1;
+			num = -1;
 		}
 		else
 		{
