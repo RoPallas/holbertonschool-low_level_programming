@@ -20,7 +20,7 @@ void print_number(int n)
 	}
 	while (c == 1)
 	{
-		if (num / (d * 10) > 10)
+		if (num / (d * 10) >= 10)
 			d *= 10;
 		else
 			c = 0;
@@ -29,7 +29,8 @@ void print_number(int n)
 	{
 		if (d == 1)
 		{
-			_putchar((num / (d * 10)) % 10 + '0');
+			if (num >= 10)
+				_putchar((num / (d * 10)) % 10 + '0');
 			_putchar(num % 10 + '0');
 			c = 1;
 		}
