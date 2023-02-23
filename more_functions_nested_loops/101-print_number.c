@@ -12,12 +12,11 @@ void print_number(int n)
 	if (n < 0)
 	{
 		_putchar('-');
-		n = (n + 1) * - 1;
-		num = n + 1;
+		num = (unsigned int)(n * -1);
 	}
 	else
 	{
-		num = n;
+		num = (unsigned int)n;
 	}
 	while (c == 1)
 	{
