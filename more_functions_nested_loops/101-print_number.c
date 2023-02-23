@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_number - print an interger
@@ -24,6 +25,7 @@ void print_number(int n)
 			d *= 10;
 		else
 			c = 0;
+		printf("[d] = %d\n", d);
 	}
 	while (c == 0)
 	{
