@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * print_number - print an interger
@@ -21,22 +20,22 @@ void print_number(int n)
 	}
 	while (c == 1)
 	{
-		if (num / (d * 10) > 0)
+		if (num / (d * 10) > 10)
 			d *= 10;
 		else
 			c = 0;
-		printf("[d] = %d\n", d);
 	}
 	while (c == 0)
 	{
 		if (d == 1)
 		{
+			_putchar((num / (d * 10)) % 10 + '0');
 			_putchar(num % 10 + '0');
 			c = 1;
 		}
 		else
 		{
-			_putchar((num / d) % 10 + '0');
+			_putchar((num / (d * 10)) % 10 + '0');
 			d /= 10;
 		}
 	}
