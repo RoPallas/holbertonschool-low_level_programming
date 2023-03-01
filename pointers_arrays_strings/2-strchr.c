@@ -11,9 +11,14 @@
  */
 char *_strchr(char *s, char c)
 {
-	int i, lc, ec = 0;
+	int i, j = 0, lc, ec = 0, strlen = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (s[j] != '\0')
+	{
+		strlen++;
+		j++;
+	}
+	for (i = 0; i <= j; i++)
 	{
 		if (s[i] == c)
 		{
