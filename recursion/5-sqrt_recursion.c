@@ -2,10 +2,10 @@
 
 /**
  * root - find natural square root of n
- * @n - number
- * @i - number test
+ * @n: number
+ * @i: number test
  *
- * Retur: square root
+ * Return: square root
  */
 int root(int n, int i)
 {
