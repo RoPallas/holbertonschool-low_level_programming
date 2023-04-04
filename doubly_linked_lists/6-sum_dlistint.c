@@ -20,11 +20,8 @@ int sum_dlistint(dlistint_t *head)
 		current = head;
 		while (current != NULL)
 		{
-			if (current->next != NULL)
-				current = current->next;
-			else
-				break;
 			sum += current->n;
+			current = current->next;
 		}
 	}
 	return (sum);
