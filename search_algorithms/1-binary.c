@@ -11,7 +11,7 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
-	int l = 0, r = size -1, m;
+	int l = 0, r = size - 1, m;
 
 	if (!array)
 		return (-1);
@@ -31,9 +31,10 @@ int binary_search(int *array, size_t size, int value)
 
 /**
  * print_array - Prints an array of integers
- *
  * @array: The array to be printed
- * @size: Number of elements in @array
+ * @l: left limit
+ * @r: right limit
+ *
  */
 void print_array(const int *array, int l, int r)
 {
